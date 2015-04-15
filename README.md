@@ -1,4 +1,4 @@
-# Propeller
+# Spiaggia London - Propeller
 
 Template of Spiaggia London created for Propeller.
 
