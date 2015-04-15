@@ -453,12 +453,15 @@
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
 <script type="text/javascript">
+// Instagram Carousel
 $('.section-3__instagram--carousel').carousel({
 	interval: 0
 });
 
+// Google Map API v3
 function showMap(){
-
+	
+	// Options and Map Styling
 	var mapOptions = {
 		zoom: 14,
 		scrollwheel: false,
@@ -466,9 +469,11 @@ function showMap(){
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		styles: [{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"on"},{"color":"#f3f4f4"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"weight":0.9},{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#83cead"}]},{"featureType":"road","elementType":"all","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"on"},{"color":"#fee379"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"visibility":"on"},{"color":"#fee379"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#7fc8ed"}]}]
 	};
-
+	
+	// Initialise
 	var map = new google.maps.Map(document.getElementById('footer_map'), mapOptions);
 
+	// Marker Details
 	var image = 'images/map-icon.png';
 	
 	var spiaggia = new google.maps.LatLng(51.480630, -0.199002);
@@ -487,6 +492,7 @@ function showMap(){
 		infowindow.open(map, marker);
 	});	
 	
+	// Change CSS depending on map state
 	$('.footer__map').slideToggle();
 	
 	if($('.footer__bottom').css("margin-top") == '60px'){
@@ -498,6 +504,13 @@ function showMap(){
 	}	
 	
 	$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+	
+	// Redraw Map
+	setTimeout(function(){
+		google.maps.event.trigger(map, 'resize');
+
+		map.panTo(marker.getPosition())
+	}, 1000);
 }
 </script>
 </body>
