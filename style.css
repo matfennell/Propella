@@ -1,0 +1,560 @@
+@font-face {
+	font-family:"NightClubs";
+	src:url("assets/fonts/NightClubs/Night_Club_70s_Regular.eot?") format("eot"),
+	url("assets/fonts/NightClubs/Night_Club_70s_Regular.woff") format("woff"),
+	url("assets/fonts/NightClubs/Night_Club_70s_Regular.ttf") format("truetype"),
+	url("assets/fonts/NightClubs/Night_Club_70s_Regular.svg#NightClubs") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+@media (min-width: 1200px) {
+	.container {
+	  width: 1280px;
+	}
+	.container-fluid {
+	  min-width: 1280px;
+	}
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Didact Gothic', sans-serif;
+}
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+	font-family: 'NightClubs';
+	color: #d3729e;
+	font-size: 30px;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+p {
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 28px;
+	letter-spacing: 1px;
+}
+
+nav ul {
+	padding: 0;
+}
+nav ul li {
+	list-style-type: none;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+nav ul li a {
+	color: #000;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-weight: 500;	
+	padding: 2px;
+	border: 3px solid #000;
+	letter-spacing: 1.3px;
+	background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, transparent 50%, #6DB9C3 50%);	
+}
+nav ul li a:hover {
+	border: 5px solid #6DB9C3;
+	color: #000;
+	text-decoration: none;
+	background-position: 0 200%;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;	
+}
+
+form label {
+	padding: 5px 2%;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #FFF;
+	float: left;
+	width: 38%;
+}
+form input {
+	border: none;
+	background: transparent;
+	color: #FFF;
+	padding: 0 4px;
+	width: 60%;
+	height: 100%;
+}
+form select {
+	border: none;
+	border-left: 4px solid #FFF;
+	border-right: 4px solid #FFF;
+	padding: 2% 5%;
+	background: transparent;
+	color: #FFF;
+	position: relative;
+	top: 1px;	
+}
+form select:last-of-type {
+	border: none;
+	float: right;
+}
+form input[type="image"] {
+	position: relative;
+	top: -60px;
+	left: 10px;
+	font-family: 'ClubNights';
+	-webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;		
+}
+form input[type="image"]:hover {
+	-webkit-transform:rotate(10deg);
+    -moz-transform:rotate(10deg);
+    -o-transform:rotate(10deg);
+}
+
+.border {
+	border: 10px solid #FFF;
+}
+.modal .modal-body img {
+	width: 100%;
+}
+
+/* - - - - - - - - - */
+/* SECTION 1 STYLING */
+/* - - - - - - - - - */
+
+.section-1 {
+	background: url('images/section1-bg.jpg') center top no-repeat;
+	padding: 60px 0 20px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.section-1 .section-1__logo img {
+	margin-bottom: 60px;
+	-webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;		
+}
+.section-1 .section-1__logo img:hover {
+	-webkit-transform:rotate(10deg);
+    -moz-transform:rotate(10deg);
+    -o-transform:rotate(10deg);
+}
+.section-1 .section-1__content {
+	margin-top: 40px;
+}
+.section-1 .section-1__content figure {
+	background: rgba(254,208,83,1);
+	background: -moz-linear-gradient(-45deg, rgba(254,208,83,1) 0%, rgba(254,208,83,1) 46%, rgba(109,185,195,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(254,208,83,1)), color-stop(46%, rgba(254,208,83,1)), color-stop(100%, rgba(109,185,195,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(254,208,83,1) 0%, rgba(254,208,83,1) 46%, rgba(109,185,195,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(254,208,83,1) 0%, rgba(254,208,83,1) 46%, rgba(109,185,195,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(254,208,83,1) 0%, rgba(254,208,83,1) 46%, rgba(109,185,195,1) 100%);
+	background: linear-gradient(135deg, rgba(254,208,83,1) 0%, rgba(254,208,83,1) 46%, rgba(109,185,195,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fed053', endColorstr='#6db9c3', GradientType=1 );
+	margin-bottom: 30px;
+	position: relative;
+	cursor: pointer;
+}
+.section-1 .section-1__content figure img {
+	opacity: 1;
+	-o-transition: opacity 0.35s;
+	-ms-transition: opacity 0.35s;
+	-moz-transition: opacity 0.35s;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+.section-1 .section-1__content figure:hover img {
+	opacity: 0.6;
+}
+.section-1 .section-1__content figure i {
+	opacity: 0;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	font-size: 60px;
+	font-size: 6rem;
+	color: #FFF;
+}
+.section-1 .section-1__content figure:hover i {
+	opacity: 1;
+}
+.section-1 .section-1__content p {
+	margin-bottom: 0;
+}
+
+/* - - - - - - - - - */
+/* SECTION 2 STYLING */
+/* - - - - - - - - - */
+
+.section-2 {
+	padding: 30px 0;
+}
+.section-2 .section-2__private-hire, .section-2 .section-2__cinema, .section-2 .section-2__events, .section-2 .section-2__games {
+	-webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;	
+} 
+.section-2 .section-2__private-hire:hover, .section-2 .section-2__cinema:hover, .section-2 .section-2__events:hover, .section-2 .section-2__games:hover {
+	-webkit-transform:rotate(10deg);
+    -moz-transform:rotate(10deg);
+    -o-transform:rotate(10deg);
+}
+.section-2 .section-2__cinema p {
+	margin: 60px 0 0 0;
+}
+.section-2 .section-2__events p {
+	margin: 130px 0 0 0;
+}
+.section-2 .section-2__games p {
+	left: 28%;
+}
+
+/* - - - - - - - - - */
+/* SECTION 3 STYLING */
+/* - - - - - - - - - */
+
+.section-3 {
+	background: url('images/section-3-bg.jpg') center top no-repeat #e0e0e0;
+	background-attachment: fixed;
+}
+.section-3 .section-3__newsletter {
+	padding: 45px 0 0;
+}
+.section-3 .section-3__newsletter h2 {
+	margin: 0;
+}
+.section-3 .section-3__newsletter p {
+	margin: 0 0 20px;
+}
+.section-3 .section-3__newsletter form .section-3__newsletter--form-group {
+	border: 4px solid #FFF;
+	margin: 0 0 15px;
+	height: 40px;
+}
+.section-3 .section-3__newsletter form .section-3__newsletter--send-button input[type="image"] {
+	width: auto;
+}
+	
+.section-3 .section-3__twitter {
+	background: #009a9b;
+	padding: 10px 0;
+}
+.section-3 .section-3__twitter--logo {
+	margin-top: 25px;
+	-webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;			
+}
+.section-3 .section-3__twitter--logo:hover {
+	-webkit-transform:rotate(10deg);
+    -moz-transform:rotate(10deg);
+    -o-transform:rotate(10deg);
+}
+.section-3 .section-3__twitter p, .section-3 .section-3__twitter p a {
+	color: #FFF;
+}
+.section-3 .section-3__twitter p a:hover {
+	color: #FFCC00;
+	text-decoration: none;
+	-webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    transition-duration: 0.35s;	
+}
+.section-3 .section-3__twitter p {
+	margin: 0;
+}
+.section-3 .section-3__twitter p:first-of-type {
+	font-size: 23px;
+	font-size: 2.3rem;
+	margin: 30px 0 10px;
+}
+.section-3 .section-3__twitter--buttons {
+	margin: 20px 0;
+}
+.section-3 .section-3__twitter--buttons p, .section-3 .section-3__twitter--buttons p:first-of-type {
+	margin: 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+.section-3 .section-3__twitter--buttons a, .section-3 .section-3__twitter--buttons p a {
+	color: #fecc00;
+}
+.section-3 .section-3__twitter--buttons a:hover, .section-3 .section-3__twitter--buttons p a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	-webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    transition-duration: 0.35s;	
+}
+
+.section-3 .section-3__facebook {
+	padding: 0 0 40px 0;
+}
+.section-3 .section-3__facebook p {
+	color: #008bc0;
+	margin: 20px 0;
+	font-size: 20px;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.section-3 .section-3__facebook img {
+	display: block;
+	margin: 0 auto 20px; 
+}
+.section-3 .section-3__facebook .section-3__facebook--icon {
+	display: inline;
+	margin: 0;
+}
+.section-3 .section-3__facebook--1 {
+	margin-top: 80px;
+}
+.section-3 .section-3__facebook--2 {
+	margin: 20px 0 0 0;
+}
+.section-3 .section-3__facebook--3, .section-3 .section-3__facebook--9 {
+	margin: 0;
+}
+.section-3 .section-3__facebook--4 {
+	margin: 30px 0 0 0;
+}
+.section-3 .section-3__facebook--5, .section-3 .section-3__facebook--6 {
+	margin: 20px 0 0 0;
+}
+.section-3 .section-3__facebook--7 {
+	margin: 40px 0 0 0;
+}
+.section-3 .section-3__facebook--7 {
+	margin: 20px 0 0 0;
+}
+.section-3 .section-3__facebook--10 {
+	margin: 80px 0 0 0;
+}
+
+.section-3__instagram .section-3__instagram--carousel {
+	margin: 40px 0;
+	border-bottom: 8px solid #FFF;
+}
+.section-3__instagram .section-3__instagram--carousel .carousel-inner {
+	margin: 0 0 10px 0;
+}
+.section-3__instagram .instagram-logo {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 80%;
+}
+
+/* - - - - - - - - - */
+/* CAROUSEL STYLING */
+/* - - - - - - - - - */
+
+.section-3__instagram .section-3__instagram--carousel .carousel-control.left, .section-3__instagram .section-3__instagram--carousel .carousel-control.right {
+	background-image: none !important;
+}
+.section-3__instagram .section-3__instagram--carousel .carousel-control {
+	color: #fff;
+	top: 38%;
+	color: #428BCA;
+	bottom: auto;
+	padding-top:4px;
+	width: 30px;
+	height: 30px;
+	text-shadow: none;
+	opacity: 1;
+}
+.section-3__instagram .section-3__instagram--carousel .carousel-control:hover {
+	color: #d9534f;
+}
+.section-3__instagram .section-3__instagram--carousel .carousel-control.right {
+	left:auto;
+	right:-50px;
+}
+.section-3__instagram .section-3__instagram--carousel .carousel-control.left {
+	right: auto;
+	left: -50px;
+}
+.section-3__instagram .section-3__instagram--carousel .carousel-indicators {
+	bottom:-30px;
+}
+.section-3__instagram .section-3__instagram--carousel .carousel-indicators li {
+	border-radius:0;
+	width:10px;
+	height:10px;
+	background:#ccc;
+	border:1px solid #ccc;
+}
+.section-3__instagram .section-3__instagram--carousel .carousel-indicators .active {
+	width:12px;
+	height:12px;
+	background:#3276b1;
+	border-color:#3276b1;
+}
+.section-3__instagram .section-3__instagram--carousel .carousel-inner img {
+	border: 8px solid #FFF;
+}
+
+/* - - - - - - - - - */
+/* FOOTER STYLING */
+/* - - - - - - - - - */
+
+footer .footer__top {
+	border-bottom: 2px solid #000;
+    height: 16px;
+	margin: 20px 0 40px;
+}
+footer .footer__top img {
+	margin: 0 auto;
+	display: block;
+}
+footer .footer__middle {
+	position: relative;
+}
+footer .footer__middle h3 {
+	font-family: 'NightClubs';
+	font-size: 18px;
+	font-size: 1.8rem;
+	margin-bottom: 20px;	
+}
+footer .footer__middle p {
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 16px;
+	font-weight: 300;
+}
+footer .footer__middle form .footer__middle--form-group {
+	border: 1px solid #000000;
+	margin: 0 0 5px;
+	height: 33px;
+}
+footer .footer__middle form .footer__middle--form-group label, 
+footer .footer__middle form .footer__middle--form-group input,
+footer .footer__middle form .footer__middle--form-group select {
+	color: #000000;
+	font-size: 12px;
+	font-size: 1.2rem;
+	text-align: left;
+}
+footer .footer__middle form .footer__middle--form-group select {
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+}	
+footer .footer__middle form .footer__middle--form-group select:last-of-type {
+	border: 0;
+}	
+footer .footer__middle form input[type="image"] {
+	width: auto;
+	top: 0;
+	left: 0;
+	margin: 10px 0 0;
+}
+footer .footer__middle form .footer__middle--form-group label {
+	margin: 3px 0 0;
+}
+footer .footer__middle .footer__middle--map-icon {
+	margin: 20px 0;
+	cursor: pointer;
+	-webkit-transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;	
+}
+footer .footer__middle .footer__middle--map-icon:hover {
+	-webkit-transform:rotate(10deg);
+    -moz-transform:rotate(10deg);
+    -o-transform:rotate(10deg);
+}
+footer .footer__middle a {
+	color: #000000;
+}
+footer .footer__middle a:hover {
+	text-decoration: none;
+}
+footer .footer__middle .footer__middle--social p {
+	margin: 5px 0 10px;
+}
+footer .footer__map {
+	display: none;
+	height: 400px;
+	width: 100%;
+	background: #000;
+}
+footer .footer__map iframe {
+	border: 0;
+	width: 100%;
+	height: 100%;
+}
+footer .footer__bottom {
+	margin: 60px 0 0;
+	padding: 10px 0 0;
+	border-top: 1px solid #cccccc;
+}
+footer .footer__bottom p a {
+	font-size: 10px;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: #6a6a6a;
+}
+footer .footer__bottom p a small {
+	position: relative;
+	top: 8px;
+}
+
+@media (max-width: 767px) {
+	.section-3 .section-3__facebook--4, .section-3 .section-3__facebook--7 {
+		clear: both;
+	}
+	.section-3 .section-3__newsletter form .section-3__newsletter--send-button input[type="image"] {
+		top: 0;
+		margin-bottom: 30px;
+	}
+	.section-3__instagram .section-3__instagram--carousel .carousel-control.left {
+		left: 0;
+	}
+	.section-3__instagram .section-3__instagram--carousel .carousel-control.right {
+		right: 0;
+	}
+	.section-1 .section-1__content figure img {
+		width: 100%;
+	}
+	form select {
+		padding: 1% 3%;
+	}
+}
