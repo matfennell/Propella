@@ -87,6 +87,7 @@ form select {
 	border-left: 4px solid #FFF;
 	border-right: 4px solid #FFF;
 	padding: 2% 5%;
+	width: 30%;
 	background: transparent;
 	color: #FFF;
 	position: relative;
@@ -485,7 +486,15 @@ footer .footer__bottom p a small {
 	  min-width: 1280px;
 	}
 }
-
+@media (min-width: 768px) and (max-width: 991px) {
+	.footer__middle--social {
+		clear: both;
+	}
+	.section-3 .section-3__newsletter form .section-3__newsletter--send-button input[type="image"] {
+		top: 0;
+		margin-bottom: 30px;
+	}	
+}
 @media (max-width: 767px) {
 	.section-3 .section-3__facebook--4, .section-3 .section-3__facebook--7 {
 		clear: both;
@@ -502,6 +511,10 @@ footer .footer__bottom p a small {
 	}
 	.section-1 .section-1__content figure img {
 		width: 100%;
+	}
+	.section-2 img, .section-3__twitter .section-3__twitter--logo img {
+		display: inline;
+		margin-left: -20px;
 	}
 	form select {
 		padding: 1% 3%;
